@@ -1,0 +1,139 @@
+html {
+	min-height: 100%;
+	position: relative;
+  }
+  body {
+	margin: 0;
+	margin-bottom: 40px;
+  }
+
+footer {
+
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	height: 40px;
+	color: white;
+  }
+
+
+/* Fixed navbar */
+body {
+    padding-top: 90px;
+}
+/* General sizing */
+ul.dropdown-lr {
+  width: 300px;
+}
+
+/* mobile fix */
+@media (max-width: 768px) {
+	.dropdown-lr h3 {
+		color: #eee;
+	}
+	.dropdown-lr label {
+		color: #eee;
+	}
+}
+
+.navbar {
+
+	padding: 10px !important;
+}
+
+
+.cambie1{
+background-image: url("../img/estudiante1.jpg");
+background-attachment: fixed;
+background-repeat: no-repeat; 
+background-size: cover;
+}
+.cambie2{
+	background-image: url("../img/estudiante2.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat; 
+	background-size: cover;
+	}
+
+.transfe{
+    background-color: rgba(6, 43, 85, 0.418);
+    border-radius: 20px;
+
+    color: white;
+}
+
+.blue {
+    background-color: #007bff!important;;
+}
+.blue1{
+		background-color: #3597ff!important;
+}
+
+.tamain{
+	padding-bottom: 200px;
+}
+
+.titulo{
+	font-size: 1.80em;
+}
+
+.carrusel{
+	padding-top:10px;  
+	background: #5da7f156;
+}
+
+
+/* input imagenes */
+input {
+	width: 100%;
+	border: 2px solid #aaa;
+	border-radius: 4px;
+	margin: 8px 0;
+	outline: none;
+	padding: 4px;
+	box-sizing: border-box;
+	transition: 0.3s;
+  }
+  
+
+
+
+  input:focus {
+	border-color: dodgerBlue;
+	box-shadow: 0 0 8px 0 dodgerBlue;
+  }
+
+  
+  
+  .inputWithIcon input {
+	padding-left: 40px;
+  }
+  
+  .inputWithIcon {
+	position: relative;
+  }
+  
+  .inputWithIcon i {
+	position: absolute;
+	left: 0;
+	top: 8px;
+	padding: 9px 8px;
+	color: #aaa;
+	transition: 0.3s;
+  }
+  
+  .inputWithIcon input:focus + i {
+	color: dodgerBlue;
+  }
+  
+  .inputWithIcon.inputIconBg i {
+	background-color: #aaa;
+	color: #fff;
+	padding: 9px 4px;
+	border-radius: 4px 0 0 4px;
+  }
+  
+  .inputWithIcon.inputIconBg input:focus + i {
+	color: #fff;
+	background-color: dodgerBlue;
+  }

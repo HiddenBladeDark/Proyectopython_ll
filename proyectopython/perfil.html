@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/styleprofile.css">
+    <link rel="icon" href="assets/img/inicio.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+  <title>Perfil de usuario</title>
+  </head>
+  <body>
+      <div id="sideNavigation" class="sidenav">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+          <a href="index.html">Inicio</a>
+          <a href="#">Perfiles</a>
+          <a href="nosotros.html">Nosotros</a>
+      </div>
+         
+        <nav class="topnav bg-primary">
+          <a href="#" onclick="openNav()" class="navopen">
+            <svg width="30" height="30" id="icoOpen">
+                <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+            </svg>
+          </a>
+        </nav>
+         
+        <div id="main">
+        <!-- Add all your websites page content here  -->
+        </div>
+
+      <div class="container">
+        <div class="row my-2">
+          <div class="col-lg-8 order-lg-2">
+            <ul class="nav nav-tabs">
+              <li class="nav-item">
+                <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Perfil</a>
+              </li>
+              <!-- <li class="nav-item">
+                <a href="" data-target="#messages" data-toggle="tab" class="nav-link">Actividades</a>
+              </li> -->
+              <li class="nav-item">
+                <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Información</a>
+              </li>
+            </ul>
+            <div class="tab-content py-4">
+              <div class="tab-pane active" id="profile">
+                <h5 class="mb-3">Ángel Muñoz</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                    <h6>Perfil profesional</h6>
+                    <p>
+                      Estudiante especializado
+                    </p>
+                    <h6>Perfil ocupacional</h6>
+                    <p>
+                      Programador y desarrollador de aplicaciones web
+                    </p>
+                  </div>
+                  <div class="col-md-6">
+                    <h6>Conocimientos en</h6>
+                    <a href="#" class="badge badge-dark badge-pill" style="background: orange;">html</a>
+                    <a href="#" class="badge badge-dark badge-pill" style="background: green;">php</a>
+                    <a href="#" class="badge badge-dark badge-pill" style="background: red;">java</a>
+                    <a href="#" class="badge badge-dark badge-pill" style="background: blue;">python</a>
+                    <a href="#" class="badge badge-dark badge-pill" style="background: purple;">bootstrap</a>
+                  </div>
+                  <div class="col-md-12">
+                    <h5 class="mt-2"><span class="fa fa-clock-o ion-clock float-right"></span> Actividad recientes</h5>
+                    <table class="table table-sm table-hover table-striped">
+                      <tbody>                                    
+                        <tr>
+                          <td>
+                            <strong>Abby</strong> joined ACME Project Team in <strong>`Collaboration`</strong>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>Gary</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>Kensington</strong> deleted MyBoard3 in <strong>`Discussions`</strong>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>John</strong> deleted My Board1 in <strong>`Discussions`</strong>
+                          </td>
+                        </tr>
+                        <tr>
+                          <td>
+                            <strong>Skell</strong> deleted his post Look at Why this is.. in <strong>`Discussions`</strong>
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+                <!--/row-->
+              </div>
+              
+              <div class="tab-pane" id="edit">
+                <form role="form">
+                  <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Nombres</label>
+                    <div class="col-lg-9">
+                      <input class="form-control" type="text" value="Angel">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Apellidos</label>
+                    <div class="col-lg-9">
+                      <input class="form-control" type="text" value="Muñoz">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Correo electrónico</label>
+                    <div class="col-lg-9">
+                      <input class="form-control" type="email" value="email@gmail.com">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Institución</label>
+                    <div class="col-lg-9">
+                      <input class="form-control" type="text" value="SENA">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                  <label class="col-lg-3 col-form-label form-control-label">Sitio web</label>
+                    <div class="col-lg-9">
+                      <input class="form-control" type="url" value="www.jordisite.com">
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label class="col-lg-3 col-form-label form-control-label">Dirección</label>
+                    <div class="col-lg-9">
+                      <input class="form-control" type="text" value="Carrera 55" ></div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label">Ubicación</label>
+                      <div class="col-lg-6">
+                        <input class="form-control" type="text" value="" placeholder="Ciudad">
+                      </div>
+                      <div class="col-lg-3">
+                        <input class="form-control" type="text" value="" placeholder="Estado">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label">Zona horaria</label>
+                      <div class="col-lg-9">
+                        <select id="user_time_zone" class="form-control" size="0">
+                          <option value="Hawaii">(GMT-10:00) Hawaii</option>
+                          <option value="Alaska">(GMT-09:00) Alaska</option>
+                          <option value="Pacific Time (US &amp; Canada)">(GMT-08:00) Pacific Time (US &amp; Canada)</option>
+                          <option value="Arizona">(GMT-07:00) Arizona</option>
+                          <option value="Mountain Time (US &amp; Canada)">(GMT-07:00) Mountain Time (US &amp; Canada)</option>
+                          <option value="Central Time (US &amp; Canada)" selected="selected">(GMT-06:00) Central Time (US &amp; Canada)</option>
+                          <option value="Eastern Time (US &amp; Canada)">(GMT-05:00) Eastern Time (US &amp; Canada)</option>
+                          <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
+                        </select>
+                      </div>
+                    </div>
+                    <!-- <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label">Nombre de usuario</label>
+                      <div class="col-lg-9">
+                        <input class="form-control" type="text" value="jordiMuñoz">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label"></label>
+                      <div class="col-lg-9">
+                        <input class="form-control" type="password" value="11111122333">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
+                      <div class="col-lg-9">
+                        <input class="form-control" type="password" value="11111122333">
+                      </div>
+                    </div> -->
+                    <div class="form-group row">
+                      <label class="col-lg-3 col-form-label form-control-label"></label>
+                      <div class="col-lg-9">
+                        <!-- <input type="reset" class="btn btn-secondary" value="Cancel"> -->
+                        <input type="button" class="btn btn-primary" value="Actualizar perfil">
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-4 order-lg-1 text-center">
+              <img src="assets/img/jordi.jpg" style="border-radius: 20px; border: 4px solid #000000;" class="mx-auto img-fluid img-circle d-block" alt="avatar">
+              <label class="custom-file">
+                <input type="file" id="file" class="custom-file-input">
+                <span style="color: white; background:red; cursor: pointer; border-radius: 10px;" class="custom-file-control p-md-3">Cambiar imagen</span>
+              </label>
+            </div>
+          </div>
+        </div>
+      <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+      <script>
+          function openNav() {
+            document.getElementById("sideNavigation").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+          }
+           
+          function closeNav() {
+            document.getElementById("sideNavigation").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+          }
+
+          $('.topnav a').click(function(){
+            $('#sideNavigation').style.width = "250px";
+            $("#main").style.marginLeft = "250px";
+          });
+ 
+          $('.closebtn').click(function(){
+            $('#sideNavigation').style.width = "0";
+            $("#main").style.marginLeft = "0";
+          });
+      </script>
+
+<footer class="page-footer font-small pt-4 bg-primary">
+
+  <!-- Footer Links -->
+  <div class="container-fluid text-center blue text-md-left">
+    
+    <!-- Grid row -->
+    <div class="row">
+
+      <!-- Grid column -->
+      <div class="col-md-6 mt-md-0 mt-3">
+        
+        <!-- Content -->
+        <h3 class="" style="color: white;">Los de Python</h3>
+        <p class="lead" style="color: white;">Nos encontramos a nivel nacional territorio Colombiano, ofreciendo almacenamiento de datos personales</p>
+        <p style="color: white;">Sena Pedregal, Medellín, Antioquia</p>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.716385745309!2d-75.57092518517804!3d6.300947927458416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f25d6670d4d%3A0x8043999e5e767b96!2sSENA%20-%20Centro%20de%20Tecnolog%C3%ADa%20de%20la%20Manufactura%20Avanzada!5e0!3m2!1ses!2sco!4v1570754942399!5m2!1ses!2sco" width="400" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+
+      </div>
+      <!-- Grid column -->
+      
+      <hr class="clearfix w-100 d-md-none pb-3">
+      <!-- Grid column -->
+      <div class="col-md-3 mb-md-0 mb-3">
+
+        <!-- Links -->
+        <h2 class="lead" style="color: white;"><b>¿Quienes somos?</b></h2>
+        <br> 
+        <ul class="list-unstyled">
+          <li>
+            <p style="color: white;">Somos un equipo de aprendices del SENA</p>
+            <p style="color: white;">¿Quieres saber mas de nosotros?</p>
+          </li>
+        </ul>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-1 blue1" style="color: white;">© 2019 Autorizados por el SENA
+  </div>
+  <!-- Copyright -->
+
+  </footer>
+  </body>
+</html>
