@@ -10,7 +10,7 @@
 
   <title>Perfil de usuario</title>
   </head>
-  <body>
+  <body style="background: #b3b4b5;">
       <div id="sideNavigation" class="sidenav">
           <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
           <a href="index.html">Inicio</a>
@@ -27,152 +27,163 @@
             </svg>
           </a>
         </nav>
-         
         <div id="main">
-        <!-- Add all your websites page content here  -->
+        
         </div>
-
       <div class="container">
-        <div class="row my-2">
-          <div class="col-lg-8 order-lg-2">
-            <ul class="nav nav-tabs">
-              <li class="nav-item">
-                <a href="" data-target="#profile" data-toggle="tab" class="nav-link active">Perfil</a>
-              </li>
-              <!-- <li class="nav-item">
-                <a href="" data-target="#messages" data-toggle="tab" class="nav-link">Actividades</a>
-              </li> -->
-              <li class="nav-item">
-                <a href="" data-target="#edit" data-toggle="tab" class="nav-link">Información</a>
-              </li>
-            </ul>
-            <div class="tab-content py-4">
-              <div class="tab-pane active" id="profile">
-                <h5 class="mb-3">Ángel Muñoz</h5>
+        <div class="row">
+          <div class="col-lg-3 order-lg text-center" style="margin-left: -20px;">
+            <img src="assets/img/jordi.jpg" style="border-radius: 20px; border: 4px solid #000000;" class="mx-auto img-fluid img-circle d-block" alt="avatar">
+            <br>
+            <button type="button" class="btn btn-primary" style="width: 200px;">Editar perfil</button>
+          </div>
+          <div class="card tab-card">
+            <div class="card-header tab-card-header">
+              <ul class="nav nav-tabs card-header-tabs" role="tablist">
+                <li class="nav-item">
+                  <a class="nav-link active" id="two-tab" data-toggle="tab" href="#two" role="tab" aria-controls="Two" aria-selected="true">Información Personal</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="one-tab" data-toggle="tab" href="#one" role="tab" aria-controls="One" aria-selected="true">Información Ocupacional</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="one-tab" data-toggle="tab" href="#three" role="tab" aria-controls="One" aria-selected="true">Estudios Complementarios</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="one-tab" data-toggle="tab" href="#four" role="tab" aria-controls="one" aria-selected="true">Experiencia Laboral</a>
+                </li>
+              </ul>
+            </div>  
+            <div class="tab-content" id="myTabContent" style="width: 850px;">
+              <div class="tab-pane show fade p-3" id="one" role="tabpanel" aria-labelledby="one-tab">
                 <div class="row">
-                  <div class="col-md-6">
-                    <h6>Perfil profesional</h6>
+                  <div class="col-md-12" style="font-family: Arial, Helvetica, sans-serif;">
+                    <h5>Perfil Profesional</h5>
                     <p>
-                      Estudiante especializado
-                    </p>
-                    <h6>Perfil ocupacional</h6>
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora, architecto? Perferendis repellendus error, numquam unde commodi inventore, officiis hic itaque odio necessitatibus explicabo minima, totam neque temporibus ullam! Explicabo, dolores!
+                    </p><hr>
+                    <h5>Perfil Ocupacional</h5>
                     <p>
-                      Programador y desarrollador de aplicaciones web con la capacidad de crear interfaces de usuario
-                      interactivas
-                    </p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita corrupti iure esse molestias delectus labore, itaque sint, autem libero dolore facere! Est quasi et dolore quas rerum error aperiam iusto.
+                    </p><hr>
+                    <h5>Logros Destacados</h5>
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Expedita corrupti iure esse molestias delectus labore, itaque sint, autem libero dolore facere! Est quasi et dolore quas rerum error aperiam iusto.
+                    </p><hr>
+                    <div>
+                        <h5>Conocimientos en las tecnologias</h5>
+                        <a href="#" class="badge badge-dark badge-pill" style="background: orange; padding: 10px; width: 60px;">HTML</a>
+                        <a href="#" class="badge badge-dark badge-pill" style="background: green; padding: 10px; width: 60px;">PHP</a>
+                        <a href="#" class="badge badge-dark badge-pill" style="background: brown; padding: 10px; width: 60px;">JAVA</a>
+                        <a href="#" class="badge badge-dark badge-pill" style="background: blue; padding: 10px; width: 80px;">PYTHON</a>
+                        <a href="#" class="badge badge-dark badge-pill" style="background: purple; padding: 10px; width: 100px;">BOOTSTRAP</a>
+                      </div>
                   </div>
-                  <div class="col-md-6">
-                    <h6>Conocimientos en</h6>
-                    <a href="#" class="badge badge-dark badge-pill" style="background: orange;">html</a>
-                    <a href="#" class="badge badge-dark badge-pill" style="background: green;">php</a>
-                    <a href="#" class="badge badge-dark badge-pill" style="background: red;">java</a>
-                    <a href="#" class="badge badge-dark badge-pill" style="background: blue;">python</a>
-                    <a href="#" class="badge badge-dark badge-pill" style="background: purple;">bootstrap</a>
-                  </div>
-                  
                 </div>
-                <!--/row-->
               </div>
-              
-              <div class="tab-pane" id="edit">
+
+              <div class="tab-pane fade show p-3 active" id="two" role="tabpanel" aria-labelledby="two-tab">
                 <form role="form">
-                  <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Nombres</label>
+                  <div class="form-group row" style="font-family: Arial, Helvetica, sans-serif;">
+                    <label class="col-lg-3 col-form-label form-control-label"><b>Nombres</b></label>
                     <div class="col-lg-9">
-                      <input class="form-control" type="text" value="Angel">
+                      <label class="col-lg-3 col-form-label form-control-label">Jose Manuel</label>
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Apellidos</label>
+                  </div><hr>
+                  <div class="form-group row" style="font-family: Arial, Helvetica, sans-serif;">
+                    <label class="col-lg-3 col-form-label form-control-label"><b>Apellidos</b></label>
                     <div class="col-lg-9">
-                      <input class="form-control" type="text" value="Muñoz">
+                      <label class="col-lg-5 col-form-label form-control-label">Quintero Rodriguez</label>
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Correo electrónico</label>
+                  </div><hr>
+                  <div class="form-group row" style="font-family: Arial, Helvetica, sans-serif;">
+                    <label class="col-lg-3 col-form-label form-control-label"><b>Correo electrónico</b></label>
                     <div class="col-lg-9">
-                      <input class="form-control" type="email" value="email@gmail.com">
+                      <label class="col-lg-5 col-form-label form-control-label">jose@jose.com</label>
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Institución</label>
+                  </div><hr>
+                  <div class="form-group row" style="font-family: Arial, Helvetica, sans-serif;">
+                    <label class="col-lg-3 col-form-label form-control-label"><b>Institución</b></label>
                     <div class="col-lg-9">
-                      <input class="form-control" type="text" value="SENA">
+                      <label class="col-lg-5 col-form-label form-control-label">SENA</label>
                     </div>
-                  </div>
-                  <div class="form-group row">
-                  <label class="col-lg-3 col-form-label form-control-label">Sitio web</label>
+                  </div><hr>
+                  <div class="form-group row" style="font-family: Arial, Helvetica, sans-serif;">
+                  <label class="col-lg-3 col-form-label form-control-label"><b>Número telefónico</b></label>
                     <div class="col-lg-9">
-                      <input class="form-control" type="url" value="www.jordisite.com">
+                      <label class="col-lg-5 col-form-label form-control-label">3016814849</label>
                     </div>
-                  </div>
-                  <div class="form-group row">
-                    <label class="col-lg-3 col-form-label form-control-label">Dirección</label>
-                    <div class="col-lg-9">
-                      <input class="form-control" type="text" value="Carrera 55" ></div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Ubicación</label>
-                      <div class="col-lg-6">
-                        <input class="form-control" type="text" value="" placeholder="Ciudad">
-                      </div>
-                      <div class="col-lg-3">
-                        <input class="form-control" type="text" value="" placeholder="Estado">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Ciudad de residencia</label>
+                  </div><hr>
+                  <div class="form-group row" style="font-family: Arial, Helvetica, sans-serif;">
+                    <label class="col-lg-3 col-form-label form-control-label"><b>Dirección</b></label>
                       <div class="col-lg-9">
-                        <select id="user_time_zone" class="form-control" size="0">
-                          <option value="Medellin">Medellin</option>
-                          <option value="Envigado">Cali</option>
-                          <option value="Pereira">Pereira</option>
-                          <option value="Cartagena">Caragena</option>
-                          <option value="Santa Marta">Santa Marta</option>
-                          <option value="Itagüi" selected="selected">Itagüi</option>
-                          <option value="Cali">Cali</option>
-                          <option value="Indiana (East)">(GMT-05:00) Indiana (East)</option>
-                        </select>
+                      <label class="col-lg-5 col-form-label form-control-label">Carrera 55</label>
+                    </div>
+                  </div><hr>
+                    <div class="form-group row" style="font-family: Arial, Helvetica, sans-serif;">
+                      <label class="col-lg-3 col-form-label form-control-label"><b>Ubicación</b></label>
+                      <div class="col-lg-5">
+                        <label class="col-lg-12 col-form-label form-control-label">Medellín / Antioquia</label>
                       </div>
                     </div>
                     <!-- <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Nombre de usuario</label>
-                      <div class="col-lg-9">
-                        <input class="form-control" type="text" value="jordiMuñoz">
-                      </div>
-                    </div>
-                    <div class="form-group row">
                       <label class="col-lg-3 col-form-label form-control-label"></label>
                       <div class="col-lg-9">
-                        <input class="form-control" type="password" value="11111122333">
-                      </div>
-                    </div>
-                    <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label">Confirm password</label>
-                      <div class="col-lg-9">
-                        <input class="form-control" type="password" value="11111122333">
-                      </div>
-                    </div> -->
-                    <div class="form-group row">
-                      <label class="col-lg-3 col-form-label form-control-label"></label>
-                      <div class="col-lg-9">
-                        <!-- <input type="reset" class="btn btn-secondary" value="Cancel"> -->
+                        <input type="reset" class="btn btn-secondary" value="Cancel">
                         <input type="button" class="btn btn-primary" value="Actualizar perfil">
                       </div>
-                    </div>
+                    </div> -->
                   </form>
                 </div>
+                <div class="tab-pane show fade p-3" id="three" role="tabpanel" aria-labelledby="one-tab">
+                    <div class="row">
+                      <div class="col-md-12" style="font-family: Arial, Helvetica, sans-serif;">
+                        <h5>Básica Primeria</h5>
+                        <p>
+                          Liceo Antioqueño<br>2005
+                        </p><hr>
+                        <h5>Básica Secundaria</h5>
+                        <p>
+                          Liceo Antioqueño<br>2011
+                        </p><hr>
+                        <h5>Técnica</h5>
+                        <p>
+                          Técnico en sistemas<br>ITM<br>2013
+                        </p><hr>
+                        <h5>Tecnología</h5>
+                        <p>
+                          Tecnólogo en sistemas<br>ITM<br>2016
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="tab-pane show fade p-3" id="four" role="tabpanel" aria-labelledby="one-tab">
+                      <div class="row">
+                        <div class="col-md-12" style="font-family: Arial, Helvetica, sans-serif;">
+                          <h5>Nombre de la empresa:</h5>
+                          <p>Ferrielectricos</p><hr>
+                          <h5>Nombre del Gerente:</h5>
+                          <p>Jack Johnson</p><hr>
+                          <h5>Cargo:</h5>
+                          <p>Vendedor y Reparador</p><hr>
+                          <h5>Funciones:</h5>
+                          <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem porro, recusandae asperiores temporibus ab commodi ullam enim tempora iusto voluptatem repellat, possimus molestiae atque explicabo quae laborum consectetur mollitia odit.
+                          </p><hr>
+                          <h5>Fecha de Contratación:</h5>
+                          <p>7 de Enero de 2012</p><hr>
+                          <h5>Fecha de Retiro:</h5>
+                          <p>7 de Diciembre de 2013</p><hr>
+                          <h5>Estado actual:</h5>
+                          <p>Retiro Voluntario</p><hr>
+                        </div>
+                      </div>
+                    </div>
               </div>
             </div>
-            <div class="col-lg-4 order-lg-1 text-center">
-              <img src="assets/img/jordi.jpg" style="border-radius: 20px; border: 4px solid #000000;" class="mx-auto img-fluid img-circle d-block" alt="avatar">
-              <label class="custom-file">
-                <input type="file" id="file" class="custom-file-input">
-                <span style="color: white; background:red; cursor: pointer; border-radius: 10px;" class="custom-file-control p-md-3">Cambiar imagen</span>
-              </label>
-            </div>
           </div>
-        </div><br><br>
+        </div>
+        <br>
       <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
