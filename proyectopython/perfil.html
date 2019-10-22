@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/styleprofile.css">
     <link rel="icon" href="assets/img/inicio.png">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <title>Perfil de usuario</title>
   </head>
   <!-- ESTE ES EL MENU YA DE POR SI -->
@@ -29,15 +30,15 @@
         <div id="main">
         <!-- NO SE PARA QUE COÑO ES ESTO PERO POR ALHUNA RAZON DEJA ESPACIOS -->
         </div>
-        <!-- PRIMERO VA EL CONTENEDOR DE MI PERSONA -->
-        <span class="icon-arrow-up" id="subir"></span>
+        <!-- PRIMERO VA EL CONTENEDOR DEL JOSE -->
       <div class="container">
         <div class="row">
           <!-- CONTENEDOR DE LA IMAGEN DE PERFIL Y EL BOTON -->
           <div class="col-lg-3 order-lg text-center" style="margin-left: -20px;">
             <img src="assets/img/jose.jpg" style="border-radius: 10px; height: 300px; width: 200px;" class="mx-auto img-fluid img-circle d-block" alt="avatar">
-            <br>
-            <button type="button" class="btn btn-primary" style="width: 150px;">Editar Perfil</button>
+            <div class="card-body">
+              <button type="button" class="btn btn-primary" style="width: 150px;">Editar Perfil</button>
+            </div>
           </div>
           <!-- CONTENEDOR DE MENU MAS LAS TABLAS -->
           <div class="card tab-card">
@@ -200,8 +201,9 @@
             <!-- CONTENEDOR DE LA IMAGEN Y EL BOTON -->
             <div class="col-lg-3 order-lg text-center" style="margin-left: -20px;">
               <img src="assets/img/jorge.jpg" style="border-radius: 10px; height: 300px; width: 200px;" class="mx-auto img-fluid img-circle d-block" alt="avatar">
-              <br>
-              <button type="button" class="btn btn-primary" style="width: 150px;">Editar Perfil</button>
+              <div class="card-body">
+                <button type="button" class="btn btn-primary" style="width: 150px;">Editar Perfil</button>
+              </div>
             </div>
             <!-- CONTENEDOR DEL MENU Y LAS TABLAS -->
             <div class="card tab-card">
@@ -365,8 +367,9 @@
                 <!-- CONTENEDOR DE LA IMAGEN Y EL BOTON -->
                 <div class="col-lg-3 order-lg text-center" style="margin-left: -20px;">
                   <img src="assets/img/santi.jpg" style="border-radius: 10px; height: 300px; width: 200px;" class="mx-auto img-fluid img-circle d-block" alt="avatar">
-                  <br>
-                  <button type="button" class="btn btn-primary" style="width: 150px;">Editar Perfil</button>
+                  <div class="card-body">
+                    <button type="button" class="btn btn-primary" style="width: 150px;">Editar Perfil</button>
+                  </div>
                 </div>
                 <!-- CONTENEDOR DEL MENU Y LAS TABLAS -->
                 <div class="card tab-card">
@@ -522,25 +525,22 @@
                   </div>
                 </div>
               </div>
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+          <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+          <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
         <script>
           function openNav() {
             document.getElementById("sideNavigation").style.width = "250px";
             document.getElementById("main").style.marginLeft = "250px";
           }
-           
           function closeNav() {
             document.getElementById("sideNavigation").style.width = "0";
             document.getElementById("main").style.marginLeft = "0";
           }
-
           $('.topnav a').click(function(){
             $('#sideNavigation').style.width = "250px";
             $("#main").style.marginLeft = "250px";
           });
- 
           $('.closebtn').click(function(){
             $('#sideNavigation').style.width = "0";
             $("#main").style.marginLeft = "0";
