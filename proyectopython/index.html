@@ -65,7 +65,9 @@
                   </ul>
                  <ul class="nav navbar-nav flex-row justify-content-between ml-auto">
                      <li class="dropdown order-1 ">
-                         <i class="fa fa-user fa-2x" style="color: white;" id="dropdownMenu1" data-toggle="dropdown" aria-hidden="true"></i>
+                        <a class="nav-link navbar-brand" id="dropdownMenu1" data-toggle="dropdown">Ingresar
+                         <i class="fa fa-user fa-2x " style="color: white; "  aria-hidden="true">
+                        </a></i>
                          <ul class="dropdown-menu dropdown-menu-right mt-2">
                             <li class="px-3 py-2">
                                 <form class="form" role="form">
@@ -137,20 +139,21 @@
         </div>
       </div>
     </div>
-	<div class="row carrusel fila">
-		<div class="container">
-			<section class="customer-logos slider">
-				<div class="slide"><img src="assets/img/car4.png"></div>
-				<div class="slide"><img src="assets/img/car1.png"></div>
-				<div class="slide"><img src="assets/img/car2.png"></div>
-				<div class="slide"><img src="assets/img/car3.png"></div>
-				<div class="slide"><img src="assets/img/car5.png"></div>
-				<div class="slide"><img src="assets/img/car6.png"></div>
-				<div class="slide"><img src="assets/img/image8.png"></div>
-			</section>
-		</div>
-	</div>
-
+    <div class="row carrusel fila">
+        <div class="container">
+          <section class="customer-logos slider">
+            <div class="slide"><img src="assets/img/car4.png"></div>
+            <div class="slide"><img src="assets/img/car1.png"></div>
+            <div class="slide"><img src="assets/img/car2.png"></div>
+            <div class="slide"><img src="assets/img/car3.png"></div>
+            <div class="slide"><img src="assets/img/car5.png"></div>
+            <div class="slide"><img src="assets/img/car6.png"></div>
+            <div class="slide"><img src="assets/img/image8.png"></div>
+          </section>
+        </div>
+      </div>
+    
+	
 	<script type="text/javascript">
 		$(document).ready(function(){
 			$('.customer-logos').slick({
@@ -189,10 +192,10 @@
         <div class="col-md-6 mt-md-0 mt-3">
           
           <!-- Content -->
-          <h3 style="color: white;">Los de Python</h3>
+          <h3 style="color: white;">CuriFolder</h3>
           <p class="lead" style="color: white;">Nos encontramos a nivel nacional territorio Colombiano, ofreciendo almacenamiento de datos personales</p>
-          <p style="color: white;">Sena Pedregal, Medellín, Antioquia</p>
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.716385745309!2d-75.57092518517804!3d6.300947927458416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f25d6670d4d%3A0x8043999e5e767b96!2sSENA%20-%20Centro%20de%20Tecnolog%C3%ADa%20de%20la%20Manufactura%20Avanzada!5e0!3m2!1ses!2sco!4v1570754942399!5m2!1ses!2sco" width="400" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
+          <p style="color: white;">Sena Pedregal, Medellín, Antioquia</p>   
+          <iframe class="embed-responsive-item" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.716385745309!2d-75.57092518517804!3d6.300947927458416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e442f25d6670d4d%3A0x8043999e5e767b96!2sSENA%20-%20Centro%20de%20Tecnolog%C3%ADa%20de%20la%20Manufactura%20Avanzada!5e0!3m2!1ses!2sco!4v1570754942399!5m2!1ses!2sco" width="400" height="100" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
 
         </div>
         <!-- Grid column -->
@@ -209,6 +212,24 @@
             <li>
               <a style="color: white;">Somos un equipo de aprendices del sena</a>
               <small ><a  style="color: white;" href="nosotros.html" >¿Quieres saber mas de nosotros?</a></small>
+              <form action="" method="POST">
+                <small>Contactanos</small>                      
+            <div class="inputWithIcon inputIconBg">
+                <input type="email" placeholder="Ingrese tu Email">
+                <i class="fa fa-envelope fa-lg fa-fw" aria-hidden="true"></i>
+              </div>
+              <div class="inputWithIcon inputIconBg">
+                  <input type="text" placeholder="Ingrese tu nombre">
+                  <i class="fa fa-user fa-lg fa-fw" aria-hidden="true"></i>
+                </div>
+                <div class="inputWithIcon inputIconBg">
+
+                <textarea  name="comentarios" rows="3" cols="35" class="md-textarea form-control" placeholder="Escribe tu comentario"></textarea>
+
+              </div>
+                
+
+              </form>
             </li>
 
           </ul>

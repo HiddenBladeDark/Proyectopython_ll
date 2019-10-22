@@ -57,7 +57,7 @@ background-size: cover;
 
 .transfe{
     background-color: rgba(6, 43, 85, 0.418);
-    border-radius: 20px;
+    border-radius: 5px;
 
     color: white;
 }
@@ -70,7 +70,8 @@ background-size: cover;
 }
 
 .tamain{
-	padding-bottom: 200px;
+	margin-bottom: 0em;
+	padding-bottom: 120px;
 }
 
 .titulo{
@@ -79,7 +80,7 @@ background-size: cover;
 
 .carrusel{
 	padding-top:10px;  
-	background: #5da7f156;
+	background: rgba(6, 43, 85, 0.418);
 }
 
 
